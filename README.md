@@ -1,5 +1,5 @@
 -   # MERN Stack Social Media App w/ Socket.io
--   Each folder has its own README with more info for each
+-   This is the deployment repo
 
     -   ## api
         -   #### Node Express server connected to MongoDB Cloud database
