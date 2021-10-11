@@ -71,7 +71,7 @@ const storage = multer.diskStorage({
 });
 
 const upload = multer({ storage: storage });
-app.post("/api/upload", upload.single("file"), (req, res) => {
+app.post("/upload", upload.single("file"), (req, res) => {
     try {
         return res.status(200).json("File uploaded successfully");
     } catch (error) {
@@ -80,11 +80,11 @@ app.post("/api/upload", upload.single("file"), (req, res) => {
 });
 
 // Set routes
-app.use("/api/auth", authRoute);
-app.use("/api/users", userRoute);
-app.use("/api/posts", postRoute);
-app.use("/api/conversations", conversationRoute);
-app.use("/api/messages", messageRoute);
+app.use("/auth", authRoute);
+app.use("/users", userRoute);
+app.use("/posts", postRoute);
+app.use("/conversations", conversationRoute);
+app.use("/messages", messageRoute);
 
 //////////////////////////////////////////
 // SOCKET IO
@@ -165,4 +165,5 @@ if (process.env.NODE_ENV === "production") {
 // });
 
 // Production
+// app.use('/api', router);
 app.listen(PORT, console.log(`Server is running on port ${PORT}`));
