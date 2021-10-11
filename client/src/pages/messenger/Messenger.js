@@ -11,6 +11,7 @@ import "./Messenger.css";
 // socket io
 import { io } from "socket.io-client";
 import ChatHeader from "../../components/ChatHeader/ChatHeader";
+import MessageMobile from "../../components/messageMobile/MessageMobile";
 
 function Messenger() {
     // public folder for photos
@@ -217,7 +218,7 @@ function Messenger() {
                                                         ref={scrollRef}
                                                         key={message._id}
                                                     >
-                                                        <Message
+                                                        <MessageMobile
                                                             message={message}
                                                             own={
                                                                 message.sender ===

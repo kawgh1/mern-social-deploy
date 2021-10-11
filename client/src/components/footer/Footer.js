@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Footer.css";
 import { Home, Mail, Notifications, Search } from "@material-ui/icons";
-import { Link } from "react-router-dom";
+import { NavL, NavLink, NavLinkink } from "react-router-dom";
 
 function Footer() {
     // detect if on desktop or mobile
@@ -30,12 +30,13 @@ function Footer() {
             <HeaderOption Icon={NotificationsIcon} title="Notifications" /> */}
                         <div className="footerIcons">
                             <div className="footerIconItem">
-                                <Link
+                                <NavLink
                                     to="/"
                                     style={{
                                         textDecoration: "none",
                                         display: "flex",
                                     }}
+                                    activeStyle={{ fontWeight: "bold" }}
                                 >
                                     <Home
                                         className="mui"
@@ -45,28 +46,53 @@ function Footer() {
                                             color: "lime",
                                         }}
                                     />
-                                </Link>
+                                </NavLink>
                             </div>
                             <div className="footerIconItem">
-                                <Search
-                                    className="mui"
-                                    style={{ height: "35px", width: "35px" }}
-                                />
+                                <NavLink
+                                    to="#"
+                                    style={{
+                                        textDecoration: "none",
+                                        display: "flex",
+                                    }}
+                                    activeStyle={{ fontWeight: "bold" }}
+                                >
+                                    <Search
+                                        className="mui"
+                                        style={{
+                                            height: "35px",
+                                            width: "35px",
+                                        }}
+                                    />
+                                </NavLink>
                             </div>
                             <div className="footerIconItem">
-                                <Notifications
-                                    className="mui"
-                                    style={{ height: "35px", width: "35px" }}
-                                />
+                                <NavLink
+                                    to="#"
+                                    style={{
+                                        textDecoration: "none",
+                                        display: "flex",
+                                    }}
+                                    activeStyle={{ fontWeight: "bold" }}
+                                >
+                                    <Notifications
+                                        className="mui"
+                                        style={{
+                                            height: "35px",
+                                            width: "35px",
+                                        }}
+                                    />
+                                </NavLink>
                                 <span className="footerIconBadge">1</span>
                             </div>
                             <div className="footerIconItem">
-                                <Link
+                                <NavLink
                                     to="/messenger"
                                     style={{
                                         textDecoration: "none",
                                         display: "flex",
                                     }}
+                                    activeStyle={{ fontWeight: "bold" }}
                                 >
                                     <Mail
                                         className="mui"
@@ -76,7 +102,7 @@ function Footer() {
                                             color: "lime",
                                         }}
                                     />
-                                </Link>
+                                </NavLink>
 
                                 <span className="footerIconBadge">1</span>
                             </div>

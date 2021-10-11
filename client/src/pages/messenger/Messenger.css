@@ -247,4 +247,56 @@
         box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
             rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     }
+
+    .chatMenuInput::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        font-size: 14px;
+    }
+
+    .chatMenuInput:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        font-size: 14px;
+    }
+
+    .chatMenuInput::-ms-input-placeholder {
+        /* Microsoft Edge */
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .chatMenu {
+        flex: 1.25;
+        max-width: 150px;
+    }
+
+    .chatBox {
+        flex: flex;
+    }
+
+    .chatBoxBottom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-evenly;
+        padding-bottom: 60px;
+        width: 100%;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+            rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    }
+
+    .chatMenuInput::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        font-size: 10px;
+    }
+
+    .chatMenuInput:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        font-size: 10px;
+    }
+
+    .chatMenuInput::-ms-input-placeholder {
+        /* Microsoft Edge */
+        font-size: 10px;
+    }
 }
