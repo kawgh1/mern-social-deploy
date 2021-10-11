@@ -1,5 +1,6 @@
 -   # MERN Stack Social Media App w/ Socket.io
 -   This is the deployment repo
+-   Live site - https://mern-social-media-react.herokuapp.com/
 
     -   ## api
         -   #### Node Express server connected to MongoDB Cloud database
