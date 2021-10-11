@@ -3,6 +3,8 @@ const app = express();
 // cors to resolve error
 const cors = require("cors");
 
+const PORT = process.env.PORT || 8800;
+
 app.use(cors());
 // // socket
 // const socketIO = require("socket.io");
@@ -145,16 +147,17 @@ app.use("/api/messages", messageRoute);
 //////////////////////////////////////////
 
 if (process.env.NODE_ENV === "production") {
-    app.use(express.static(path.join(__dirname, "../client/build")));
-
-    app.get("*", (req, res) => {
-        res.sendFile(path.join(__dirname, "client", "build", "index.html"));
-    });
-} else {
-    app.get("/", (req, res) => {
-        res.send("API running");
-    });
+    app.use(express.static(path.join("client/build")));
 }
+
+//     app.get("*", (req, res) => {
+//         res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+//     });
+// } else {
+//     app.get("/", (req, res) => {
+//         res.send("API running");
+//     });
+// }
 
 // Development - set to listen on port 8800
 // app.listen(8800, () => {
@@ -163,4 +166,4 @@ if (process.env.NODE_ENV === "production") {
 
 // Production
 const PORT = process.env.PORT;
-app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
+app.listen(PORT, console.log(`Server is running on port ${PORT}`));
