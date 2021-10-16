@@ -36,7 +36,6 @@ function Footer() {
                                         textDecoration: "none",
                                         display: "flex",
                                     }}
-                                    activeStyle={{ fontWeight: "bold" }}
                                 >
                                     <Home
                                         className="mui"
@@ -55,7 +54,6 @@ function Footer() {
                                         textDecoration: "none",
                                         display: "flex",
                                     }}
-                                    activeStyle={{ fontWeight: "bold" }}
                                 >
                                     <Search
                                         className="mui"
@@ -73,7 +71,6 @@ function Footer() {
                                         textDecoration: "none",
                                         display: "flex",
                                     }}
-                                    activeStyle={{ fontWeight: "bold" }}
                                 >
                                     <Notifications
                                         className="mui"
@@ -92,7 +89,6 @@ function Footer() {
                                         textDecoration: "none",
                                         display: "flex",
                                     }}
-                                    activeStyle={{ fontWeight: "bold" }}
                                 >
                                     <Mail
                                         className="mui"

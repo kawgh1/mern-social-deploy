@@ -1,5 +1,5 @@
 import React from "react";
-import "./Message.css";
+import "./MessageMobile.css";
 
 import { format } from "timeago.js";
 

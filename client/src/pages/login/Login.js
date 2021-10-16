@@ -58,7 +58,7 @@ export default function Login() {
                             letterSpacing: "1px",
                             color: "white",
                             textShadow:
-                                "0 0 5px #e2e2e2, 0 0 10px #e2e2e2, 0 0 15px #e2e2e2, 0 0 20px #49ff18, 0 0 30px #49ff18, 0 0 40px #49ff18, 0 0 55px #49ff18, 0 0 75px #49ff18",
+                                "0 0 5px #e2e2e2, 0 0 10px #e2e2e2, 0 0 15px #e2e2e2, 0 0 10px #49ff18, 0 0 10px #49ff18, 0 0 10px #49ff18",
                         }}
                     >
                         For demo purposes user can log in with username

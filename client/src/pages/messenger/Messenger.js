@@ -379,7 +379,7 @@ function Messenger() {
                                                         ref={scrollRef}
                                                         key={message._id}
                                                     >
-                                                        <Message
+                                                        <MessageMobile
                                                             message={message}
                                                             own={
                                                                 message.sender ===
