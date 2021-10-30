@@ -31,7 +31,7 @@ function Sidebar() {
                             style={{
                                 textDecoration: "none",
                                 display: "flex",
-                                color: "lime",
+                                color: "#98FF98",
                             }}
                         >
                             <Chat className="sidebarListItem" />

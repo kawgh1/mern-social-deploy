@@ -42,7 +42,7 @@ function Footer() {
                                         style={{
                                             height: "35px",
                                             width: "35px",
-                                            color: "lime",
+                                            color: "#98FF98",
                                         }}
                                     />
                                 </NavLink>
@@ -95,7 +95,7 @@ function Footer() {
                                         style={{
                                             height: "35px",
                                             width: "35px",
-                                            color: "lime",
+                                            color: "#98FF98",
                                         }}
                                     />
                                 </NavLink>

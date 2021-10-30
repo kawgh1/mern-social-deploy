@@ -54,4 +54,8 @@
 		order: 10;
 		height: fit-content;
 	} */
+	.feed {
+		flex: 5.5;
+		height: calc(100vh - 127px);
+	}
 }
