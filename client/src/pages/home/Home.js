@@ -65,7 +65,7 @@ const Home = () => {
 				</>
 			) : (
 				<>
-					<Topbar />
+					
 					<div
 						className="homeContainer"
 						style={{
@@ -77,10 +77,11 @@ const Home = () => {
 							backgroundSize: "cover",
 						}}
 					>
+					<Topbar />
 						<Feed />
-						
+						<Footer />
 					</div>
-					<Footer />
+					
 				</>
 			)}
 		</>

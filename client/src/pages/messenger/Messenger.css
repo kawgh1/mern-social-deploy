@@ -234,9 +234,7 @@
 
 @media screen and (max-width: 700px) {
     .messenger {
-        height: calc(100vh - 127px);
-        bottom: 55px;
-        top: 70px;
+        height: 100%;
     }
     .chatMenu {
         flex: 2;
