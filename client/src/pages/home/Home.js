@@ -78,8 +78,9 @@ const Home = () => {
 						}}
 					>
 						<Feed />
-						<Footer />
+						
 					</div>
+					<Footer />
 				</>
 			)}
 		</>
