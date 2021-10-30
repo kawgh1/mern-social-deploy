@@ -64,7 +64,7 @@ const Home = () => {
 					</div>
 				</>
 			) : (
-				<>
+				
 					
 					<div
 						className="homeContainer"
@@ -82,7 +82,7 @@ const Home = () => {
 						<Footer />
 					</div>
 					
-				</>
+				
 			)}
 		</>
 	);
