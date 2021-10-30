@@ -309,7 +309,7 @@ function Messenger() {
                 </>
             ) : (
                 <>
-                    
+                    <Topbar />
                     <div
                         className="messenger"
                         style={{
@@ -321,7 +321,6 @@ function Messenger() {
                             backgroundSize: "cover",
                         }}
                     >
-                    <Topbar />
                         <div className="chatMenu">
                             <div className="chatMenuWrapper">
                                 <input
@@ -444,9 +443,8 @@ function Messenger() {
                                 )}
                             </div>
                         </div>
-                        <Footer />
                     </div>
-                    
+                    <Footer />
                 </>
             )}
         </>
