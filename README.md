@@ -4,10 +4,10 @@
 
     -   ## note
 
-        -   **I have hardcoded User "John" as the default, so that visitors are not immediately hit with a login screen**
+        -   **I have hardcoded User "John" as the default user instead of null, so that visitors are not immediately hit with a login screen**
         -   **The files where this was implemented (hardcoded):**
-            -   **src/context/AuthContext.js**
-            -   **src/pages/profile/Profile.js**
+            -   **client/src/context/AuthContext.js**
+            -   **client/src/.env**
 
     -   ## api
         -   #### Node Express server connected to MongoDB Cloud database
