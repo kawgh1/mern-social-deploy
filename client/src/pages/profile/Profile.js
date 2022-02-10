@@ -24,7 +24,7 @@ const Profile = () => {
     useEffect(() => {
         const fetchUser = async () => {
             // const res = await axios.get(`/users?username=${username}`); // normal - pass username
-            const res = await axios.get(`/users?username=john`); // hardcode username john@gmail.com
+            const res = await axios.get(`/users?username=john`); // hardcode username john
 
             setUser(res.data);
             console.log(res.data);
