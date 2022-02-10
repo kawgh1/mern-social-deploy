@@ -16,7 +16,7 @@ const Profile = () => {
     // Get current User pass 'username' as props - this is normal but we're hard coding John
     const [user, setUser] = useState({});
     // get username from URL params react-router
-    const username = useParams().username || "john"; // - normal
+    const username = useParams().username || "john"; // - normal is without john, just grab from params
     // public folder for photos
     const PublicFolder = process.env.REACT_APP_PUBLIC_FOLDER;
 
@@ -25,7 +25,7 @@ const Profile = () => {
         console.log("username = ", username);
         const fetchUser = async () => {
             // const res = await axios.get(`/users?username=${username}`); // normal - pass username
-            const res = await axios.get(`/users?username=john`); // hardcode username john
+            const res = await axios.get(`/users?username=${username}`); // hardcode username john
 
             setUser(res.data);
             console.log(res.data);
