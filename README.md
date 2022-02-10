@@ -2,6 +2,13 @@
 -   This is the deployment repo
 -   Live site - https://mern-social-media-react.herokuapp.com/
 
+    -   ## note
+
+        -   **I have hardcoded User "John" as the default, so that visitors are not immediately hit with a login screen**
+        -   **The files where this was implemented (hardcoded):**
+            -   **src/context/AuthContext.js**
+            -   **src/pages/profile/Profile.js**
+
     -   ## api
         -   #### Node Express server connected to MongoDB Cloud database
         -   running on localhost:8800
