@@ -15,7 +15,10 @@ import AuthReducer from "./AuthReducer";
 const INITIAL_STATE = {
     // user: JSON.parse(localStorage.getItem("user")) || null,
     // I am passing the whole "john" user Object here for demonstration purposes, this is stupid and not secure for normal use
-    user: JSON.parse(localStorage.getItem("user")) || JSON.parse(process.env.REACT_APP_USER_JOHN),
+    user: JSON.parse(localStorage.getItem("user")) || {
+        _id: "6139b4da7ff1b5eea981efdb",
+        username: "john",
+    },
     isFetching: false,
     error: false,
 };
