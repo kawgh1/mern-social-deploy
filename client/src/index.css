@@ -4,7 +4,7 @@ body,
     height: 100%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 430px) {
     html {
         overflow: hidden;
         width: 100%;
