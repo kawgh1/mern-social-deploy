@@ -7,7 +7,6 @@
         -   **I have hardcoded User "John" as the default user instead of null, so that visitors are not immediately hit with a login screen**
         -   **The files where this was implemented (hardcoded):**
             -   **client/src/context/AuthContext.js**
-            -   **client/src/.env**
 
     -   ## api
         -   #### Node Express server connected to MongoDB Cloud database
